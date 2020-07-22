@@ -15,39 +15,38 @@
 // // function call to initialize program
 // init();
 
-// Declaring the dependencies and variables
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const generateReadme = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 const writeFileAsync = util.promisify(fs.writeFile);
 
-//Prompt the user questions to populate the README.md
+//Questions
 function promptUser() {
     return inquirer.prompt([{
             type: "input",
             name: "projectTitle",
-            message: "What is the project title?",
+            message: "What is the name of the project?",
         },
         {
             type: "input",
             name: "description",
-            message: "Write a brief description of your project: "
+            message: "Briefly describe the project: "
         },
         {
             type: "input",
             name: "installation",
-            message: "Describe the installation process if any: ",
+            message: "How does one install this project? ",
         },
         {
             type: "input",
             name: "usage",
-            message: "What is this project usage for?"
+            message: "What does this project do?"
         },
         {
             type: "list",
             name: "license",
-            message: "Chose the appropriate license for this project: ",
+            message: "What is the license for this project? ",
             choices: [
                 "Apache",
                 "Academic",
@@ -61,17 +60,12 @@ function promptUser() {
         {
             type: "input",
             name: "contributing",
-            message: "Who are the contributors of this projects?"
+            message: "Who worked on this project? "
         },
         {
             type: "input",
             name: "tests",
-            message: "Is there a test included?"
-        },
-        {
-            type: "input",
-            name: "questions",
-            message: "What do I do if I have an issue? "
+            message: "Is there a test function? "
         },
         {
             type: "input",
@@ -91,7 +85,7 @@ async function init() {
     try {
         // Ask user questions and generate responses
         const answers = await promptUser();
-        const generateContent = generateReadme(answers);
+        const generateContent = generateMarkdown(answers);
         // Write new README.md to dist directory
         await writeFileAsync('README.md', generateContent);
         console.log('README Generated!');

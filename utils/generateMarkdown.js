@@ -8,9 +8,9 @@
 // module.exports = generateMarkdown;
 
 // generateReadme function populating the README.md
-function generateReadme(answers) {
+function generateMarkdown(answers) {
     return `
-<h1 align="center">${answers.projectTitle} </h1>
+#${answers.projectTitle}
 
 ## Description
 ![badge](https://img.shields.io/badge/license-${answers.license}-blue)<br />
@@ -43,12 +43,10 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-${answers.questions}<br />
-<br />
 Follow me on Github: [${answers.username}](https://github.com/${answers.username})<br />
 <br />
-Email me with any questions: ${answers.email}<br /><br />
+Email me with any questions: ${answers.email}
 `;
 }
 
-module.exports = generateReadme;
+module.exports = generateMarkdown;
