@@ -10,7 +10,7 @@
 // generateReadme function populating the README.md
 function generateMarkdown(answers) {
     return `
-#${answers.projectTitle}
+# ${answers.projectTitle}
 
 ## Description
 ![badge](https://img.shields.io/badge/license-${answers.license}-blue)<br />
