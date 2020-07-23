@@ -1,10 +1,10 @@
 
 
-# Test output
+# This is a test. 
 
 ## Summary
 ![badge](https://img.shields.io/badge/license-Open-blue)<br />
-This is a test output in order to test the functionality of the application. 
+This is test output for the readme generator function. 
 
 ## Table of Contents
 - [Description](#description)
@@ -16,13 +16,13 @@ This is a test output in order to test the functionality of the application.
 - [Questions](#questions)
 
 ## Installation
-command line > npm init. command line > npm install inquirer.
+npm init, npm install inquirer from the command line
 
 ## Functionality
-This application generates a readme
+Generates a readme
 
 ## Credits
-No collabs
+No collaborators
 
 ## License
 This application is covered by the Open license. 
@@ -30,7 +30,7 @@ This application is covered by the Open license.
 ![badge](https://img.shields.io/badge/license-Open-blue)
 
 ## Tests
-run node index.js
+node index.js
 
 ## Questions
 Follow me on Github: [jakekelly44](https://github.com/jakekelly44)
