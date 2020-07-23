@@ -1,20 +1,10 @@
-// // function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
-
-// `;
-// }
-
-// module.exports = generateMarkdown;
-
-// generateReadme function populating the README.md
-function generateMarkdown(answers) {
+function generateMarkdown(data) {
     return `
-# ${answers.projectTitle}
+# ${data.projectName}
 
-## Description
-![badge](https://img.shields.io/badge/license-${answers.license}-blue)<br />
-${answers.description}
+## Summary
+![badge](https://img.shields.io/badge/license-${data.license}-blue)<br />
+${data.summary}
 
 ## Table of Contents
 - [Description](#description)
@@ -26,26 +16,27 @@ ${answers.description}
 - [Questions](#questions)
 
 ## Installation
-${answers.installation}
+${data.installation}
 
-## Usage
-${answers.usage}
+## Functionality
+${data.functionality}
 
 ## License
-This application is covered by the ${answers.license} license. 
+This application is covered by the ${data.license} license. 
 <br />
-![badge](https://img.shields.io/badge/license-${answers.license}-blue)
+![badge](https://img.shields.io/badge/license-${data.license}-blue)
 
 ## Contributions
-${answers.contributing}
+${data.contributions}
 
 ## Tests
-${answers.tests}
+${data.testFunctions}
 
 ## Questions
-Follow me on Github: [${answers.username}](https://github.com/${answers.username})<br />
+Follow me on Github: [${data.user}](https://github.com/${data.user})
 <br />
-Email me with any questions: ${answers.email}
+<br />
+Email me with any questions: ${data.email}
 `;
 }
 

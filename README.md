@@ -1,9 +1,9 @@
 
-# test
+# Jake
 
-## Description
+## Summary
 ![badge](https://img.shields.io/badge/license-Apache-blue)<br />
-
+Poop on people
 
 ## Table of Contents
 - [Description](#description)
@@ -15,10 +15,10 @@
 - [Questions](#questions)
 
 ## Installation
+npm install and whatnot
 
-
-## Usage
-
+## Functionality
+it generates readmes
 
 ## License
 This application is covered by the Apache license. 
@@ -26,12 +26,13 @@ This application is covered by the Apache license.
 ![badge](https://img.shields.io/badge/license-Apache-blue)
 
 ## Contributions
-
+jake
 
 ## Tests
-
+node index.js
 
 ## Questions
-Follow me on Github: [](https://github.com/)<br />
+Follow me on Github: [jakekelly44](https://github.com/jakekelly44)
 <br />
-Email me with any questions: 
+<br />
+Email me with any questions: jakekelly@gmail.com

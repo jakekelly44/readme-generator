@@ -25,13 +25,13 @@ const writeFileAsync = util.promisify(fs.writeFile);
 function promptUser() {
     return inquirer.prompt([{
             type: "input",
-            name: "projectTitle",
+            name: "projectName",
             message: "What is the name of the project?",
         },
         {
             type: "input",
-            name: "description",
-            message: "Briefly describe the project: "
+            name: "summary",
+            message: "Briefly summarize the point of the project "
         },
         {
             type: "input",
@@ -40,8 +40,8 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "usage",
-            message: "What does this project do?"
+            name: "functionality",
+            message: "What function does this app perform?"
         },
         {
             type: "list",
@@ -59,17 +59,17 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "contributing",
+            name: "contributions",
             message: "Who worked on this project? "
         },
         {
             type: "input",
-            name: "tests",
+            name: "testFunctions",
             message: "Is there a test function? "
         },
         {
             type: "input",
-            name: "username",
+            name: "user",
             message: "Please enter your GitHub username: "
         },
         {
@@ -84,8 +84,8 @@ function promptUser() {
 async function init() {
     try {
         // Ask user questions and generate responses
-        const answers = await promptUser();
-        const generateContent = generateMarkdown(answers);
+        const data = await promptUser();
+        const generateContent = generateMarkdown(data);
         // Write new README.md to dist directory
         await writeFileAsync('README.md', generateContent);
         console.log('README Generated!');
