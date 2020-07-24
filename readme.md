@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is a project which was developed for the University of Arizona Coding Bootcamp course. The application contained within has been designed to generate a project readme using arkdown. The project contains an application that utilizes javascript, jquery, node.js, and inquirer. 
+This is a project which was developed for the University of Arizona Coding Bootcamp course. The application contained within has been designed to generate a readme file using the Markdown language. The project contains an application that utilizes javascript, jquery, node.js, and inquirer. 
 
 
 ## Table of Contents 
@@ -21,7 +21,7 @@ This is a project which was developed for the University of Arizona Coding Bootc
 Clone the repo onto your local drive   
 Open a command line terminal specific to the repo folder    
 Run the following command and answer all of the prompts:    
-`npm init`
+`npm init`   
 Run the following command:   
 `npm install inquirer`
 
@@ -37,14 +37,12 @@ From the command line, run the following command:
 
 University of Arizona Coding Bootcamp Week 9 Node.js Learning Module -- Portfolio Genrator. 
 
-[Shields.io] (https://shields.io/)
+[Shields.io](https://shields.io/)
 
 
 ## License
 
 MIT License
-
-Copyright (c) [2020] [Jakelly44]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -69,7 +67,7 @@ SOFTWARE.
 
 ![badge](https://img.shields.io/badge/Javascript-brightgreen)
 ![badge](https://img.shields.io/badge/jQuery-blue)!
-[badge](https://img.shields.io/badge/node.js-lightgrey)
+![badge](https://img.shields.io/badge/node.js-lightgrey)
 ![badge](https://img.shields.io/badge/inquirer-red)
 
 ## Tests
@@ -81,7 +79,7 @@ SOFTWARE.
 
 ![Proof of README Generator](doc/readme_gen_gif.gif "README Generator GIF")
 
-![Proof of README Generator](doc/readme_gen_mp4.mp4 "README Generator Video")
+Please use the following link to download the application demo video; [Application Demo](doc/readme_gen_mp4.mp4 "README Generator Video")
 
 
 
