@@ -66,7 +66,7 @@ SOFTWARE.
 ## Badges
 
 ![badge](https://img.shields.io/badge/Javascript-brightgreen)
-![badge](https://img.shields.io/badge/jQuery-blue)!
+![badge](https://img.shields.io/badge/jQuery-blue) 
 ![badge](https://img.shields.io/badge/node.js-lightgrey)
 ![badge](https://img.shields.io/badge/inquirer-red)
 
@@ -79,7 +79,7 @@ SOFTWARE.
 
 ![Proof of README Generator](doc/readme_gen_gif.gif "README Generator GIF")
 
-Please use the following link to download the application demo video; [Application Demo](doc/readme_gen_mp4.mp4 "README Generator Video")
+Please use the following link to download the application demo video: [Application Demo](doc/readme_gen_mp4.mp4 "README Generator Video")
 
 
 
